@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+@media(max-width: 480px) {
+    .contact-form{
+        margin-bottom: 0;
+    }
+
+    .smf-action{
+        padding-bottom: 0;
+    }
+
+    .thd_contact__notes .smb-section__body{
+        border-top: none;
+        padding-top: 0;
+    }
+
+    .form-content{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* margin: 30px auto; */
+        margin-bottom: 50px;
+      }
+      
+      .form-content::after {
+        content: "";
+        position: absolute;
+        bottom: -25px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .form-content::before {
+        content: "";
+        position: absolute;
+        bottom: -24px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .smb-section__body{
+        padding-top: 0;
+      }
+
+      .tab-layout{
+        border: none;
+      }
+
+      .tab-layout{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* margin: 30px auto; */
+        margin-bottom: 50px;
+      }
+      
+      .tab-layout::after {
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .tab-layout::before {
+        content: "";
+        position: absolute;
+        bottom: 4px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .smb-section__inner{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* margin: 30px auto; */
+        /* margin-bottom: 50px; */
+      }
+      
+      .smb-section__inner::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .smb-section__inner::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .tab-btn.active{
+        border-bottom: none;
+      }
+
+      .tab-btn.active{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* margin: 30px auto; */
+        /* margin-bottom: 50px; */
+      }
+      
+      .tab-btn.active::after {
+        content: "";
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .tab-btn.active::before {
+        content: "";
+        position: absolute;
+        bottom: -3px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .tab-btn{
+        padding: 10px;
+      }
+
+      .accordion-content.open{
+        text-align: left;
+      }
+
+      .accordion-content{
+        text-align: left;
+      }
+}

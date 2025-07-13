@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+
+
+  .l-main{
+    margin-bottom: 0;
+  }
+
+  @media screen and (max-width: 750px) {
+    .m-txt:not(:first-child){
+        margin-bottom: 0;
+        border-top: none;
+    }
+
+    .vision-underline{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        /* margin: 10px auto; */
+      }
+      
+      .vision-underline::after {
+        content: "";
+        position: absolute;
+        bottom: -30.5px;
+        left: 0;
+        height: 4px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .vision-underline::before {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      
+    .l-block--mission{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        /* padding-bottom: 10px; */
+        margin:  auto 5%;
+      }
+      
+      .l-block--mission::after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        height: 4px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #69b5e6, 
+        #a46ec5, 
+        #f17c83, 
+        #f4b66d, 
+        #f3e37c  ); /* グラデ部分の色 */
+      }
+      
+      .l-block--mission::before {
+        content: "";
+        position: absolute;
+        bottom: -28.5px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .smb-btn-box__btn-wrapper{
+        padding-top: 75px;
+      }
+
+      .l-contents{
+        padding: 0;
+      }
+
+     .l-sectionLv2:not(:first-child){
+        width: 100%;
+     }
+
+     .smb-section--fit{
+        margin: 0 5%;
+        padding-top: 0;
+     }
+
+     .smb-section__title{
+      padding-top: 0;
+     }
+
+     .l-main{
+        margin-top: 0;
+
+     }
+
+     .l-container{
+        /* padding-top: 0; */
+     }
+
+     .l-footer__upper{
+      margin-top: 0;
+     }
+}      
+
+.smb-section__title{
+  font-family: sans-serif !important;
+}
+
+.l-section{
+  background-color: #fff;
+}
+
+.l-contents{
+  width: auto;
+}
+
+.next-img{
+  width: 50%;
+}
+
+.m-lead__ttl-3{
+  font-size: 27px;
+}
+
+.u-fs--ls{
+  font-size: 16px;
+}
+
+.u-tac--pc{
+  text-align: left;
+}
+
+.l-main{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+  .next-img{
+    width: 100%;
+  }
+}

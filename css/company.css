@@ -1,0 +1,465 @@
+@charset "untf-8";
+
+
+.company-ichiran{
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 10px; */
+  /* margin: 30px auto; */
+}
+
+.company-ichiran::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 4px; /* グラデ部分は太め */
+  width: 40%; /* グラデの長さをここで調整 */
+  background: linear-gradient( to right,
+  #69b5e6, 
+  #a46ec5, 
+  #f17c83, 
+  #f4b66d, 
+  #f3e37c  ); /* グラデ部分の色 */
+}
+
+.company-ichiran::before {
+  content: "";
+  position: absolute;
+  bottom: 1.5px;
+  left: 40%; /* グラデの終わりに合わせる */
+  height: 1px; /* 単色部分は細め */
+  width: calc(100% - 40%); /* 残りを単色で */
+  background-color: #9c9c9c; /* 単色の色 */
+}
+
+
+.p-profile__listItem-upper{
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 10px; */
+  /* margin: 30px auto; */
+}
+
+.p-profile__listItem-upper::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 4px; /* グラデ部分は太め */
+  width: 40%; /* グラデの長さをここで調整 */
+  background: linear-gradient( to right,
+  #69b5e6, 
+  #a46ec5, 
+  #f17c83, 
+  #f4b66d, 
+  #f3e37c  ); /* グラデ部分の色 */
+}
+
+.p-profile__listItem-upper::before {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 40%; /* グラデの終わりに合わせる */
+  height: 1px; /* 単色部分は細め */
+  width: calc(100% - 40%); /* 残りを単色で */
+  background-color: #9c9c9c; /* 単色の色 */
+}
+
+
+.members-underline{
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin: 30px auto;
+}
+
+.members-underline::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  height: 3px; /* グラデ部分は太め */
+  width: 40%; /* グラデの長さをここで調整 */
+  background: linear-gradient( to right,
+  #69b5e6, 
+  #a46ec5, 
+  #f17c83, 
+  #f4b66d, 
+  #f3e37c  ); /* グラデ部分の色 */
+}
+
+.members-underline::before {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 40%; /* グラデの終わりに合わせる */
+  height: 1px; /* 単色部分は細め */
+  width: calc(100% - 40%); /* 残りを単色で */
+  background-color: #9c9c9c; /* 単色の色 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.p-profile__listChildPosition{
+  min-width: 150px;
+  width: auto;
+}
+
+
+.p-profile__listChild{
+  padding-left: 0;
+}
+
+.contents-upper , .contents-lower{
+  display: flex;
+  gap: 25px;
+}
+
+
+
+  @media(max-width: 480px){
+    .p-profile__listTxt{
+        -webkit-touch-callout: none;
+        -webkit-user-select: text;
+        user-select: text
+    }
+
+    .member-accordion{
+        margin-top: 0;
+    }
+
+    element.style{
+        padding-left: 0;
+    }
+
+    .toggle-btn{
+        padding-left: 0;
+        width: auto;
+        margin-left: -3px;
+    }
+
+    .thd_company__menbers__item__name__en{
+        margin-top: -5px !important;
+    }
+
+    .l-footer__upper{
+      margin-top: 0;
+    }
+
+    .smb-btn-box__btn-wrapper{
+      padding-top: 30px;
+    }
+
+    .thd_group__item.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{
+      margin-top: auto !important;
+    }
+
+    .grey-out{
+      font-family: futura-pt, sans-serif;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 600;
+      letter-spacing: .1em;
+      line-height: 1.5;
+      color: #9c9c9c;
+    }
+
+    .grey-out:before{
+      background-image: url(../img/grey_arrow.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    }
+
+    .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{
+      padding-bottom: 13px;
+    }
+
+    .wp-block-columns.is-not-stacked-on-mobile>.wp-block-column:not(:first-child) {
+      margin-top: 0;
+  }
+
+  }
+
+  
+  .thd_company__menbers__item {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; /* 中央寄せ */
+    gap: 60px; /* テキストと画像の間 */
+    margin-bottom: 80px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 40px;
+  }
+
+  .thd_company__menbers__item .wp-block-column:first-child {
+    order: 1;
+    flex: none;
+    max-width: 600px;
+  }
+
+  .thd_company__menbers__item .wp-block-column:last-child {
+    order: 2;
+    /* flex: 0 0 300px; */
+  }
+
+  .thd_company__menbers__item .wp-block-column:last-child img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .thd_company__menbers__item .wp-block-column:first-child p {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+  }
+
+  .thd_company__menbers__item {
+    padding: 0 !important;
+  }
+  
+  .thd_company__menbers__item .wp-block-column {
+    padding: 0 !important;
+  }
+
+  .wp-block-columns.is-not-stacked-on-mobile{
+    justify-content: normal;
+  }
+
+
+  .wp-block-columns.is-not-stacked-on-mobile{
+    justify-content: left;
+  }
+  .next-img{
+    width: 50%;
+  }
+
+
+  .thd_group__item__list>.wp-block-columns{
+    display: block;
+  }
+
+  .wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column:not(:first-child){
+    margin-left: 0;
+  }
+
+.smb-btn-box__btn-wrapper{
+  text-align: center !important;
+}
+
+body, .smb-section__inner{
+  background-color: #fff !important;
+}
+
+.footer-upper{
+  margin: 0 auto 30px;
+}
+
+footer{
+  padding-top: 0;
+  padding-top: 30px;
+}
+
+.wp-block-image:not(.is-style-rounded) img, .wp-block-image:not(.is-style-rounded)>a{
+  max-height: none;
+}
+
+.introduction-text{
+  display: block;
+  padding-left: 0;
+}
+
+.member-introduction{
+  padding-left: 0;
+}
+
+.executive-wrap{
+  max-width: 850px;
+  margin-top: -20px;
+}
+
+.p-profile__listItem-upper{
+  width: 970px;
+  margin: auto;
+}
+
+.company-img{
+  max-height: 130px !important;
+  max-width: 130px !important;
+  margin-top: -45px !important;
+}
+
+
+.wp-block-column-is-layout-flow{
+
+}
+
+.smb-section__contents-wrapper>*+*{
+  width: 95%;
+  margin: auto;
+}
+
+.wp-block-image{
+  display: flex;
+  justify-content: right;
+}
+
+.wp-block-group{
+  width: 86%;
+  margin: auto;
+}
+
+.thd_group__item__logo{
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+  .executive-wrap{
+    max-width: none;
+  }
+
+  .p-profile__listItem-upper{
+    width: 85%;
+  }
+
+  .next-img{
+    width: 100%;
+  }
+
+  .smb-section__contents-wrapper>*+*{
+    width: 100%;
+    margin: auto;
+  }
+  
+  .thd_group__item__logo img{
+    width: 100%  ;
+  }
+  
+  .relapis-img{
+    max-height: 100px !important;
+    width: auto !important;
+  }
+
+  .company-img{
+    margin-top: 0px !important;
+    max-width: 100% !important; ;
+  }
+  
+
+
+
+
+
+  .company-ichiran{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 10px; */
+    /* margin: 30px auto; */
+  }
+  
+  .company-ichiran::after {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    height: 4px; /* グラデ部分は太め */
+    width: 40%; /* グラデの長さをここで調整 */
+    background: linear-gradient( to right,
+    #69b5e6, 
+    #a46ec5, 
+    #f17c83, 
+    #f4b66d, 
+    #f3e37c  ); /* グラデ部分の色 */
+  }
+  
+  .company-ichiran::before {
+    content: "";
+    position: absolute;
+    bottom: 31.5px;
+    left: 40%; /* グラデの終わりに合わせる */
+    height: 1px; /* 単色部分は細め */
+    width: calc(100% - 40%); /* 残りを単色で */
+    background-color: #9c9c9c; /* 単色の色 */
+  }
+
+  .members-underline::after {
+    content: none;
+  }
+  
+  .members-underline::before {
+    content: none;
+  }
+
+  .wp-block-image{
+    display: block;
+  }
+
+  .thd_group__item__logo{
+    display: block;
+  }
+
+  .wp-block-group{
+    width: 100%;
+    margin: auto;
+  }
+
+  .contents-upper, .contents-lower{
+    gap: 10px;
+  }
+
+}

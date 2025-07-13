@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+.wp-block-image:not(.is-style-rounded) img{
+    max-height: 100%;
+}
+
+
+
+.smb-section__inner-2{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-bottom: 10px; */
+    /* margin: 30px auto; */
+  }
+  
+  .smb-section__inner-2::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 4px; /* グラデ部分は太め */
+    width: 40%; /* グラデの長さをここで調整 */
+    background: linear-gradient( to right,
+    #69b5e6, 
+    #a46ec5, 
+    #f17c83, 
+    #f4b66d, 
+    #f3e37c  ); /* グラデ部分の色 */
+  }
+  
+  .smb-section__inner-2::before {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    left: 40%; /* グラデの終わりに合わせる */
+    height: 1px; /* 単色部分は細め */
+    width: calc(100% - 40%); /* 残りを単色で */
+    background-color: #9c9c9c; /* 単色の色 */
+  }
+
+  .p-entry-content>:not(:first-child){
+    border: none;
+  }
+
+  .l-footer__upper{
+    margin-top: 0;
+  }
+
+  .smb-section__title{
+    font-family: sans-serif !important;
+  }
+
+
+.cpmpany-message-main{
+  justify-content: center;
+  width: auto;
+}
+
+.company-message-wrap{
+  width: auto;
+}
+
+.thd_top-message__text p{
+  font-size: 18px;
+  text-align: left;
+}
+
+.message-company-name{
+  font-family: "Noto Serif JP", serif !important;
+  font-size: 21px !important;
+}
+
+.message-japanese-name , .message-position{
+  font-family: 'EishiiKaisho', serif !important;
+}
+
+.message-position-wrap{
+  position: relative;
+}
+
+.message-nameposition{
+  display: flex;
+  gap: 10px;
+}
+
+.message-position{
+  font-size: 22px !important;
+  /* position: absolute; */
+  bottom: 0;
+}
+
+.message-japanese-name{
+  font-size: 32px !important;
+}
+
+.next-img{
+  width: 50%;
+}
+
+.smb-section__title{
+  font-size: 40px;
+}
+
+.smb-section__lede-wrapper{
+  font-size: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+  .message-company-name{
+    font-family: "Noto Serif JP", serif !important;
+    font-size: 15px !important;
+  }
+
+  .thd_top-message__text p{
+  }
+
+  .l-contents-message{
+    padding: 0;
+    margin: auto 5%;
+  }
+
+  .next-img{
+    width: 100%;
+  }
+}

@@ -1,0 +1,286 @@
+@charset "utf=8";
+
+body{
+  background-color: #fff;
+}
+
+.smb-section__contents-wrapper {
+    background-color: #fff;
+}
+
+.business-wrapper{
+  /* margin-top: 85px; */
+}
+
+
+
+
+.smb-section{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    /* margin: 30px auto; */
+  }
+  
+  .smb-section::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    height: 3px; /* グラデ部分は太め */
+    width: 40%; /* グラデの長さをここで調整 */
+    background: linear-gradient( to right,
+    #69b5e6, 
+    #a46ec5, 
+    #f17c83, 
+    #f4b66d, 
+    #f3e37c  ); /* グラデ部分の色 */
+  }
+  
+  .smb-section::before {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 40%; /* グラデの終わりに合わせる */
+    height: 1px; /* 単色部分は細め */
+    width: calc(100% - 40%); /* 残りを単色で */
+    background-color: #9c9c9c; /* 単色の色 */
+  }
+
+  .philosophy-section{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+  }
+
+
+  .philosophy-section::after {
+    content: "";
+    position: absolute;
+    bottom: -43px;
+    left: 0;
+    height: 3px; /* グラデ部分は太め */
+    width: 40%; /* グラデの長さをここで調整 */
+    background: linear-gradient( to right,
+    #69b5e6, 
+    #a46ec5, 
+    #f17c83, 
+    #f4b66d, 
+    #f3e37c  ); /* グラデ部分の色 */
+    z-index: 999;
+  }
+  
+  .philosophy-section::before {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 40%; /* グラデの終わりに合わせる */
+    height: 1px; /* 単色部分は細め */
+    width: calc(100% - 40%); /* 残りを単色で */
+    background-color: #9c9c9c; /* 単色の色 */
+    z-index: 999;
+  }
+
+
+.index-companys{
+  position: relative;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+
+.index-companys::after {
+content: "";
+position: absolute;
+bottom: -20px;
+left: 0;
+height: 3px; /* グラデ部分は太め */
+width: 40%; /* グラデの長さをここで調整 */
+background: linear-gradient( to right,
+#69b5e6, 
+#a46ec5, 
+#f17c83, 
+#f4b66d, 
+#f3e37c  ); /* グラデ部分の色 */
+z-index: 999;
+}
+
+.index-companys::before {
+content: "";
+position: absolute;
+bottom: -19px;
+left: 40%; /* グラデの終わりに合わせる */
+height: 1px; /* 単色部分は細め */
+width: calc(100% - 40%); /* 残りを単色で */
+background-color: #9c9c9c; /* 単色の色 */
+z-index: 999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .news-section iframe {
+    width: 100%;
+    border: none;
+    min-height: 850px;
+  }
+  
+
+  .smb-img{
+    height: 300px;
+  }
+
+  .wp-block-column{
+    width: 100% !important;
+  }
+
+  .is-content-justification-right{
+    /* justify-content: center !important; */
+  }
+
+  h3 , .thd_top__group__lead{
+
+  }
+
+  .wp-block-heading-philosophy{
+    font-size: 40px !important;
+    margin-top: 5px !important;
+  }
+  
+  .smb-section__title{
+    background-color: #fff;
+    font-size: 30px;
+    border: none;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .smb-section__lede{
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+  }
+
+  .smb-section__title:after {
+    content: "none";
+    display: none;
+}
+
+.philosophy-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.philosophy-img{
+  display: flex;
+  align-items: center;
+}
+
+.business{
+  background-color: rgb(242, 242, 242);
+  margin: 0 auto;
+}
+
+.business-wrapper-main{
+  padding-bottom: 40px;
+  padding-top: 30px;
+  margin-top: 2px;
+}
+
+.business-section_inner{
+  background-color: rgb(242, 242, 242);
+}
+
+.smb-section__lede-wrapper-philosophy{
+  display: flex;
+  gap: 20px;
+  justify-content: left;
+}
+
+.smb-section__body-philosophy{
+  text-align: left;
+}
+
+.smb-buttons.is-content-justification-right{
+  justify-content: left !important;
+}
+
+.vision-message-innner{
+  margin-top: 10px !important;
+  font-size: 18px !important;
+}
+
+.wp-block-heading{
+  margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 480px){
+  .philosophy-wrapper{
+    display: block;
+  }
+
+  .business{
+    background-color: #fff;
+  }
+
+  .smb-img{
+    height: 200px;
+  }
+  
+  .p-entry-content>:not(:first-child){
+    margin-top: 0 !important  ;
+  }
+  
+  .p-entry-content > .recruit-index-wrapper{
+    margin-top: 50px !important;
+  }
+
+
+
+  .smb-section__lede{
+    justify-content: center;
+  }
+
+  .smb-section__lede-wrapper-philosophy{
+    display: block;
+  }
+
+  .wp-block-heading-philosophy{
+    font-size: 23px !important;
+  }
+
+  .thd_top__vision .wp-block-columns .wp-block-column p{
+    text-align: center;
+  }
+
+  .smb-buttons.is-content-justification-right{
+    justify-content: center !important;
+  }
+}

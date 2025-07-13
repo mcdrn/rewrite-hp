@@ -1,0 +1,366 @@
+@charset "UTF-8";
+main,body{
+    overflow-x: visible;
+    background-color: #fff;
+}
+
+.c-heading.is-xlg{
+    padding-left: 0;
+}
+
+.index ul li a{
+    font-family: sans-serif;
+}
+
+
+.c-front-company__group{
+    background-color: #99dbff;
+}
+
+.c-front-company__company{
+    border: 1px solid #99dbff;
+}
+
+.c-heading.is-xlg .is-eng{
+    color: #99dbff;
+}
+
+.c-block-business__heading span{
+    background-color: #99dbff;
+}
+
+.l-footer__menu , .c-block-business__tab:after , .l-footer__bottom{
+    background-color: #99dbff;
+}
+
+.c-block-business__content-wrapper{
+    border: 2px solid #99dbff;
+}
+
+
+.c-block-business__tab.is-active{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .1), inset 0 0 0 2px #99dbff;
+}
+
+.c-heading.is-xlg:before{
+    content: none;
+}
+
+
+.contents{
+    background-color: #fff;
+}
+
+.privacy-policy-body{
+    margin-top: -50px;
+}
+
+.c-main-visual__border {
+    background: linear-gradient(to bottom, #99dbff, #00A9A5) !important;
+    width: 2px;
+  }
+  
+
+.c-button.is-secondary{
+    background-color: #99dbff ;
+}
+
+.c-button{
+    background-color: #99dbff;
+}
+
+.l-footer__address{
+    counter-reset: #000;
+    margin-bottom: 15px;
+}
+
+.top{
+    display: block;
+}
+
+footer{
+    background-color: #fff;
+}
+
+.l-footer{
+    padding-left: 0;
+}
+
+.smb-section__title{
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.smb-section__header{
+    margin-bottom: 20px;
+}
+
+
+
+.p-profile__listItem-upper{
+    position: relative;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin: 30px auto;
+  }
+  
+.p-profile__listItem-upper::after {
+    content: "";
+    position: absolute;
+    bottom: -17px;
+    left: 0;
+    height: 3px; /* グラデ部分は太め */
+    width: 40%; /* グラデの長さをここで調整 */
+    background: linear-gradient( to right,
+    #99dbff  ); /* グラデ部分の色 */
+}
+  
+.p-profile__listItem-upper::before {
+    content: "";
+    position: absolute;
+    bottom: -16px;
+    left: 40%; /* グラデの終わりに合わせる */
+    height: 1px; /* 単色部分は細め */
+    width: calc(100% - 40%); /* 残りを単色で */
+    background-color: #9c9c9c; /* 単色の色 */
+}
+
+
+.l-footer__menulist{
+    padding-left: 0;
+}
+
+#main{
+    width: auto;
+    text-align: left;
+}
+
+#inside-container{
+    padding-top: 100px;
+}
+
+.c-front-company__companies{
+    margin-bottom: 15px;
+}
+
+.index-main{
+    padding-left: 70px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer#0887cd */
+
+@media (max-width: 480px){
+    .c-front-company__company{
+        padding: 7px;
+        margin-bottom: .875rem;
+    }
+
+    .index-main{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin: 30px auto;
+      }
+      
+      .index-main::after {
+        content: "";
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #99dbff  ); /* グラデ部分の色 */
+      }
+      
+      .index-main::before {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+      }
+
+      .index-more::before {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 2px;                   /* ← ここが線の太さ！ */
+        background: linear-gradient(#99dbff);
+        margin-right: 5px;
+        flex-shrink: 0;                /* ← これで縮まない */
+        position: relative;
+        top: 0;
+      }
+
+
+      .c-heading.is-xlg{
+        padding-left: 0;
+      }
+
+
+/* 
+      .l-main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+      } */
+
+      .nav-text-class { /* ←対象のクラスに適用 */
+        font-family: "Noto Serif JP", serif;
+        font-size: 12px;
+        font-weight: 600; /* 見た目の太さを近づける */
+        letter-spacing: 0.025em; /* 一枚目と同じなら追加 */
+        line-height: 1.4; /* 必要に応じて調整 */
+      }
+
+      .l-footer_business li a {
+        font-size: 12px !important;
+        font-family: "Noto Serif JP", serif !important;
+        font-weight: 600 !important;
+        line-height: 1.4 !important;
+      }
+      
+    .l-footer__menulist li a{
+        font-size: 17px;
+    }
+
+      .l-footer__menulist li:not(:last-child) a{
+        font-size: 17px;
+      }
+
+    .l-footer__button a{
+        font-size: 14px;
+    }
+
+    .l-footer__logo{
+        max-width: 100%;
+    }
+
+    .l-footer__logo img{
+        width: auto;
+        height: 40px;
+    }
+      
+      .l-footer__business li a{
+        font-size: 12px;
+      }
+
+      .p-profile__listTxt{
+        width: 100%;
+      }
+
+    .p-profile__listTtl{
+        margin: 1rem 0;
+    }
+
+
+    .p-profile__listItem-upper{
+        position: relative;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin: 30px auto;
+      }
+      
+    .p-profile__listItem-upper::after {
+        content: "";
+        position: absolute;
+        bottom: -17px;
+        left: 0;
+        height: 3px; /* グラデ部分は太め */
+        width: 40%; /* グラデの長さをここで調整 */
+        background: linear-gradient( to right,
+        #99dbff  ); /* グラデ部分の色 */
+    }
+      
+    .p-profile__listItem-upper::before {
+        content: "";
+        position: absolute;
+        bottom: -16px;
+        left: 40%; /* グラデの終わりに合わせる */
+        height: 1px; /* 単色部分は細め */
+        width: calc(100% - 40%); /* 残りを単色で */
+        background-color: #9c9c9c; /* 単色の色 */
+    }
+
+    .p-profile{
+        margin-top: 100px;
+    }
+
+    .p-profile__listItem-upper{
+        padding-bottom: 0;
+    }
+    
+
+    .p-profile__list-upper{
+        margin-bottom: 40px;
+    }
+
+    .smb-section__header .smb-section__title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        line-height: 1;
+        letter-spacing: 1px;
+    }
+
+    .smb-section__header .smb-section__lede{
+        letter-spacing: 3px;
+        font-size: 1.3rem;
+        margin-top: 3px;
+        font-weight: 700;
+    }
+
+    .l-footer__address-wrap{
+        margin-bottom: 13px;
+    }
+
+    .l-footer__business , .l-footer__menulist {
+        padding-left: 0;
+    }
+
+    .l-section.is-lg{
+        padding-top: 4.125rem;
+    }
+
+    .c-front-company__company-hashimoto{
+        border: 1px solid #00A9A5;
+    }
+
+    .hashimoto-heading{
+        background-color: #00A9A5 !important;
+    }
+
+    .c-front-company__company-hashimoto.is-active {
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .1), inset 0 0 0 2px #00A9A5;
+    }
+}
+
+
+

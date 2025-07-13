@@ -1,0 +1,5 @@
+@charset "utf-8";
+
+.privacy-cont__txt:last-child , .privacy-cont__item , .privacy-cont__txt{
+    text-align: left;
+}

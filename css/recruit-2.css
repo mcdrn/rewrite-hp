@@ -1,0 +1,124 @@
+@charset    "UTF-8";
+
+body{
+    text-align: left;
+}
+
+.subpage_mv2 .page_title .title
+ {
+        margin-top: 35px;
+        font-size: 28px;
+        padding-bottom: 20px;
+    }
+
+h1 , h2{
+    text-align: left;
+}
+
+.move-box{
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+
+.c-container{
+    padding-top: 0 !important;
+}
+
+.move-list{
+    padding: 0 40px !important;
+}
+
+.footer-upper{
+    margin: 0 auto 30px;
+}
+
+footer{
+    padding-top: 0;
+    padding-top: 30px;
+}
+
+.l-footer__upper{
+    margin-top: 0;
+}
+
+#personality .subpage_mv2{
+    border-bottom: none;
+    margin-top: -24px;
+}
+
+.subpage_mv2:after {
+    position: absolute;
+    content: "";
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 85px);
+    /* background: linear-gradient(120deg, #1e3a8a, #10b981); */
+    /* background: linear-gradient(120deg, #1e293b, #94a3b8); */
+    /* background: linear-gradient(120deg, #c4b5fd, #fcd34d); */
+    /* background: linear-gradient(120deg, #0f172a, #1e3a8a); */
+    /* background: linear-gradient(120deg, #1e3a8a, #0f766e); */
+    /* background: linear-gradient(120deg, #334155, #94a3b8); */
+    /* background: linear-gradient(120deg, #1e40af, #facc15); */
+    /* background: linear-gradient(to bottom right, #003366,    #005f73,  #0a9396    ); */
+    background: linear-gradient(to right, #3c5aac, #3b82f6, #93c5fd);
+
+    background-size: 300% 300%;
+    animation: bggradient 15s ease infinite;
+    z-index: -1;
+  }
+  
+  
+  @keyframes bggradient{
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
+
+
+
+
+.move-box:before
+ {
+        width: 0px;
+    }
+
+
+.category{
+    font-size: 40px !important;
+    color: #fff !important;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.page_title .category {
+    color: #1E3A8A; /* ディープブルー */
+  }
+  
+
+p{
+    color: #fff;
+}
+
+.item-title{
+    color: #fff;
+}
+
+/* .cotegory-en{
+    text-align: center;
+    font-size: 14px;
+} */
+
+.item-title{
+    border-bottom: solid 1px #fff !important;
+}
+
+.subpage_mv2 .page_title .title{
+    width: 81%;
+}
+
+.cotegory-en{
+    font-size: 18px !important;
+}
